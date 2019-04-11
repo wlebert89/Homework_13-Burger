@@ -12,11 +12,11 @@ var orm = {
     },
     insertOne: function (value, cb) {
         var queryString = "INSERT INTO burgers (burger_name) VALUES (?);";
-        connection.query(queryString, value, function (err, result){
-            if (err){
+        connection.query(queryString, value, function (err, result) {
+            if (err) {
                 throw err;
             }
-            cb(result)
+            cb(result);
         });
     },
     updateOne: function(id, cb){
@@ -25,7 +25,7 @@ var orm = {
             if (err){
                 throw err;
             }
-            cb(result)
+            cb(result);
         });
     }
 };

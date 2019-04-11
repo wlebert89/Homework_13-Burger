@@ -6,19 +6,19 @@ var app = express();
 
 app.use(express.static("public"));
 
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 var exphbs = require("express-handlebars");
 
-app.engine("handlebars", exphbs({defaultLayout: "main"}));
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// var routes = require("./controllers/controller.js");
+var routes = require("./controllers/controller.js");
+app.use(routes);
 
-// app.use(routes);
-
-var burger = require("./models/model");
+// vvv - uncomment this to test the DB internally.
+// var burger = require("./models/model");
 
 app.listen(PORT, function(){
     console.log("Server listening on http://localhost:" + PORT);
