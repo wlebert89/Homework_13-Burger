@@ -4,20 +4,21 @@
 
 <ul>
     {{#each burger}}
+    {{#unless devoured}}
     <li>
         <p>{{this.id}}. {{this.burger_name}}</p>
+        <button class="devour" data-id="{{this.id}}">Devour</button>
     </li>
-    {{#unless devoured}}
     {{/unless}}
     {{/each}}
 </ul>
 <hr>
 <ul>
-    {{#each burgers}}
+    {{#each burger}}
+    {{#if devoured}}
     <li>
         <p>{{this.id}}. {{this.burger_name}}</p>
     </li>
-    {{#if devoured}}
     {{/if}}
     {{/each}}
 </ul>
