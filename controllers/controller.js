@@ -16,12 +16,15 @@ router.get("/", function (req, res) {
 
 router.post("/api/burgers", function (req, res) {
     var newBurger = req.body;
-    console.log("Figuring out what this is: " + newBurger.burger_name);
-    burger.insertOne(req.body.burger_name,
+    burger.insertOne(newBurger.burger_name,
         function (result) {
-            res.json(result);
-            console.log("This is the result: " + result);
+            res.json({id: result.insertId});
+            // console.log(result.insertId);
         });
 });
+
+router.put("api/burgers/:id", function(req, res){
+    
+})
 
 module.exports = router;
