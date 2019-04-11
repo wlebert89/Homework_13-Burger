@@ -15,12 +15,12 @@ router.get("/", function (req, res) {
 });
 
 router.post("/api/burgers", function (req, res) {
-    // var newBurger = req.body.name;
-    console.log("Figuring out what this is: " + req.body.name);
-    burger.insertOne("hardcoded test...",
+    var newBurger = req.body;
+    console.log("Figuring out what this is: " + newBurger.burger_name);
+    burger.insertOne(req.body.burger_name,
         function (result) {
             res.json(result);
-            console.log("This is the result: " + result.burger_name);
+            console.log("This is the result: " + result);
         });
 });
 
