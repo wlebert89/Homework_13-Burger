@@ -1,11 +1,11 @@
-DROP DATABASE IF EXISTS burgers_db;
-CREATE DATABASE burgers_db;
-USE burgers_db;
+DROP DATABASE IF EXISTS potions_db;
+CREATE DATABASE potions_db;
+USE potions_db;
 
-CREATE TABLE burgers
+CREATE TABLE potions
 (
 	id INT NOT NULL AUTO_INCREMENT,
-	burger_name VARCHAR(100) NOT NULL,
+	potion_name VARCHAR(100) NOT NULL,
 	devoured BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );

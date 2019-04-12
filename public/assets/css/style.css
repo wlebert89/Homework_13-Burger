@@ -1,0 +1,75 @@
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+html, body {
+    background: #ceb6e6;
+    background-image: url(../img/potion-v1.jpg);
+    background-position: center center;
+    background-size: contain;
+    background-position-y: 120px;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+#main {
+    max-width: 65%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#heading {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#container-left {
+    float: left;
+    text-align: right;
+}
+
+#container-right {
+    float: right;
+}
+
+.devour {
+    cursor: pointer;
+}
+
+#summon-form {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 80px;
+    text-align: center;
+    width: 100%;
+}
+
+input {
+    text-align: center;
+    font-size: 18px;
+}
+
+li {
+    padding: 20px;
+}
+
+#form-input {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 40%;
+}
+
+#post-form{
+    margin: auto;
+    padding: 10px;
+    width: 40%;
+    cursor: pointer;
+}

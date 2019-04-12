@@ -17,9 +17,6 @@ app.set("view engine", "handlebars");
 var routes = require("./controllers/controller.js");
 app.use(routes);
 
-// vvv - uncomment this to test the DB internally.
-// var burger = require("./models/model");
-
 app.listen(PORT, function(){
     console.log("Server listening on http://localhost:" + PORT);
 });

@@ -1,35 +1,43 @@
-<h1>Burgers</h1>
+<div id="main">
+    <h1 id="heading">Chug Yer Potions</h1>
 
-<h2>Eat 'em...</h2>
+    <div id="container-left">
+        <ul>
+            {{#each potion}}
+            {{#unless devoured}}
+            <li>
+                <p>{{this.id}}. {{this.potion_name}}
+                    <button class="devour" data-id="{{this.id}}">Chug it!</button>
+                </p>
 
-<ul>
-    {{#each burger}}
-    {{#unless devoured}}
-    <li>
-        <p>{{this.id}}. {{this.burger_name}}</p>
-        <button class="devour" data-id="{{this.id}}">Devour</button>
-    </li>
-    {{/unless}}
-    {{/each}}
-</ul>
-<hr>
-<ul>
-    {{#each burger}}
-    {{#if devoured}}
-    <li>
-        <p>{{this.id}}. {{this.burger_name}}</p>
-    </li>
-    {{/if}}
-    {{/each}}
-</ul>
-
-<h2>Add a burger</h2>
-
-<form>
-    <div class="form-group">
-        <label for="form-input">Type of Burger:</label>
-        <input type="text" id="form-input">
+            </li>
+            {{/unless}}
+            {{/each}}
+        </ul>
     </div>
 
-    <button id="post-form" type="submit">Submit</button>
-</form>
+    <div id="container-right">
+        <ul>
+            {{#each potion}}
+            {{#if devoured}}
+            <li>
+                <p>{{this.id}}. {{this.potion_name}}</p>
+            </li>
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+
+    <div id="summon-form">
+        <h2>Summon a potion:</h2>
+        <form>
+            <div class="form-group">
+                {{!-- <label for="form-input"></label> --}}
+                <input type="text" id="form-input">
+            </div>
+
+            <button id="post-form" type="submit">Summon</button>
+        </form>
+    </div>
+
+</div>

@@ -1,15 +1,15 @@
 $(function () {
     $("#post-form").on("click", function (event) {
         event.preventDefault();
-        var newBurger = {
-            burger_name: $("#form-input").val().trim()
+        var newPotion = {
+            potion_name: $("#form-input").val().trim()
         };
-        console.log(newBurger);
-        $.ajax("/api/burgers", {
+        console.log(newPotion);
+        $.ajax("/api/potions", {
             type: "POST",
-            data: newBurger
+            data: newPotion
         }).then(function () {
-            console.log("New burger posted.");
+            console.log("New potion posted.");
             location.reload();
         });
     });
@@ -17,7 +17,7 @@ $(function () {
     $(".devour").on("click", function (event) {
         var id = $(this).data("id");
         console.log(id);
-        $.ajax("api/burgers/" + id, {
+        $.ajax("api/potions/" + id, {
             type: "PUT",
             data: id
         }).then(function (){
