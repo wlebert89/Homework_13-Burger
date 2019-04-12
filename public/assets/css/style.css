@@ -6,14 +6,20 @@ h2 {
     font-size: 24px;
 }
 
+h3 {
+    font-size: 18px;
+    /* font-style: italic; */
+}
+
 html, body {
+    font-family: 'Poiret One', cursive;
+    color: #ffffff;
     background: #ceb6e6;
     background-image: url(../img/potion-v1.jpg);
     background-position: center center;
-    background-size: contain;
-    background-position-y: 120px;
+    background-size: 850px;
     background-repeat: no-repeat;
-    overflow: auto;
+    height: 100%;
 }
 
 #main {
@@ -24,13 +30,12 @@ html, body {
 
 #heading {
     text-align: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 160px;
 }
 
 #container-left {
     float: left;
-    text-align: right;
 }
 
 #container-right {
@@ -38,38 +43,71 @@ html, body {
 }
 
 .devour {
+    text-align: center;
+    background: #e1bbdf;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    left: 0px;
+    box-shadow: 1px 1px 4px #b6a0cc;
     cursor: pointer;
+    transition: left .3s ease;
+}
+
+.devour:hover {
+    position: relative;
+    left: 20px;
+}
+
+.devoured {
+    text-align: center;
+    background: #fcd4f6;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    left: 0px;
 }
 
 #summon-form {
     position: fixed;
     left: 0;
     bottom: 0;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     text-align: center;
     width: 100%;
 }
 
 input {
     text-align: center;
-    font-size: 18px;
-}
-
-li {
-    padding: 20px;
+    font-size: 16px;
 }
 
 #form-input {
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 5px;
-    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 3px;
+    width: 300px;
 }
 
 #post-form{
+    font-family: 'Poiret One', cursive;
+    color: #e1bbdf;
     margin: auto;
     padding: 10px;
-    width: 40%;
+    width: 300px;
+    background: #ffffff;
+    border: none;
     cursor: pointer;
 }
+
+#post-form:hover {
+    color: #ffffff;
+    background: #e1bbdf;
+}
+
+/* FONT BANK
+
+font-family: 'Poiret One', cursive;
+
+*/
