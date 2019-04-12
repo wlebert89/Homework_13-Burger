@@ -1,4 +1,4 @@
-INSERT INTO potions (potion_name) VALUES ('Amarillo Burger');
-INSERT INTO potions (potion_name) VALUES ('LA Burger');
-INSERT INTO potions (potion_name) VALUES ('Pitts Burger');
-INSERT INTO potions (potion_name) VALUES ('Chicago Burger');
+INSERT INTO potions (potion_name) VALUES ('Cure Light Wounds');
+INSERT INTO potions (potion_name) VALUES ('Barkskin');
+INSERT INTO potions (potion_name) VALUES ('Darkvision');
+INSERT INTO potions (potion_name) VALUES ('Spider Climb');

@@ -6,7 +6,7 @@
             {{#each potion}}
             {{#unless devoured}}
             <li>
-                <p>{{this.id}}. {{this.potion_name}}
+                <p>{{this.potion_name}}
                     <button class="devour" data-id="{{this.id}}">Chug it!</button>
                 </p>
 
@@ -21,7 +21,7 @@
             {{#each potion}}
             {{#if devoured}}
             <li>
-                <p>{{this.id}}. {{this.potion_name}}</p>
+                <p>{{this.potion_name}}</p>
             </li>
             {{/if}}
             {{/each}}
