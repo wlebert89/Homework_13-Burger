@@ -1,5 +1,5 @@
 h1 {
-    font-size: 36px;
+    font-size: 42px;
 }
 
 h2 {
@@ -15,7 +15,7 @@ html, body {
     font-family: 'Poiret One', cursive;
     color: #ffffff;
     background: #ceb6e6;
-    background-image: url(../img/potion-v1.jpg);
+    background-image: url(../img/potion-v3.jpg);
     background-position: center center;
     background-size: 850px;
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@ html, body {
 
 #heading {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
     margin-bottom: 160px;
 }
 
@@ -44,28 +44,37 @@ html, body {
 
 .devour {
     text-align: center;
-    background: #e1bbdf;
+    /* background: #886198; */
+    /* background: #e1bbdf;
+    background: #a79bc5; */
+    background: #6e4584;
     padding: 10px;
     margin-bottom: 10px;
     width: 200px;
+    position: relative;
     left: 0px;
-    box-shadow: 1px 1px 4px #b6a0cc;
+    box-shadow: 1px 1px 3px #a48abe;
     cursor: pointer;
-    transition: left .3s ease;
+    transition: 0.3s ease;
 }
 
 .devour:hover {
     position: relative;
-    left: 20px;
+    background: #886198;
+    left: 10px;
 }
 
 .devoured {
     text-align: center;
+    background: #e1bbdf;
     background: #fcd4f6;
+    background: #e6ccf0;
     padding: 10px;
     margin-bottom: 10px;
+    box-shadow: 1px 1px 3px #c7a9e4;
     width: 200px;
     left: 0px;
+    text-decoration: line-through;
 }
 
 #summon-form {
@@ -92,18 +101,20 @@ input {
 
 #post-form{
     font-family: 'Poiret One', cursive;
-    color: #e1bbdf;
+    color: #6e4584;
     margin: auto;
-    padding: 10px;
-    width: 300px;
+    padding: 8px;
+    width: 120px;
     background: #ffffff;
     border: none;
     cursor: pointer;
+    transition: .3s ease;
 }
 
 #post-form:hover {
     color: #ffffff;
-    background: #e1bbdf;
+    background:#6e4584;
+    width: 130px;
 }
 
 /* FONT BANK
